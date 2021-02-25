@@ -1,15 +1,25 @@
 {% extends 'home.html'%}
 {% block content %}
+<style>
+
+    body {
+     background-image: url('https://go.forrester.com/wp-content/uploads/Reddit.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+
+</style>
 <div class="container" >
     <br/>
-    <h2 align="center">Post New Tweet</h2>
+    <h2 align="center">Your Reddit Post</h2>
     <br/>
 <form action="" method="post">
     {% csrf_token %}
     <div class="form-group">
-        <label for="title"><h4>Title</h4></label>
+        <label for="title"><h4>Title of your Post</h4></label>
         <input  id="title" type="text" name="title"  class="form-control" placeholder="Title"/>
-        <label for="post"><h4>Post</h4></label>
+        <label for="post"><h4>Post Here..</h4></label>
         <textarea  id="post" style="height:100px" type="text" name="post"  class="form-control" placeholder="Your text"></textarea>
     </div>
     <br/>

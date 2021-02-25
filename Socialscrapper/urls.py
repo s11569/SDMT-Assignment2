@@ -5,7 +5,7 @@ The `urlpatterns` list routes URLs to views. For more information please see:
 Examples:
 Function views
     1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+    2. Add a URL to urlpatterns:  path('', views.Assignmenthome, name='Assignmenthome')
 Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
@@ -18,9 +18,9 @@ from django.urls import path
 from scraptwitter import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('tshow/',views.TwitterShowData),
-    path('tpost/', views.TwitterPostData),
-    path('rshow/',views.RedditShowData),
-    path('rpost/', views.RedditPostData),
+    path('',views.Assignmenthome),
+    path('tshow/',views.TwitterApp),
+    path('tpost/', views.ShowTwitterData),
+    path('rshow/',views.ShowRedditData),
+    path('rpost/', views.PostRedditData),
 ]

@@ -1,17 +1,27 @@
 {% extends 'home.html'%}
 {% block content %}
+<style>
+
+    body {
+     background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2015-10/13/12/enhanced/webdr09/original-26234-1444753872-3.jpg?downsize=600:*&output-format=auto&output-quality=auto');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+
+</style>
 <div class="container" >
     <br/>
-    <h2 align="center">Post New Tweet</h2>
+    <h2 align="center">Post Tweet</h2>
     <br/>
 <form action="" method="post">
     {% csrf_token %}
     <div class="form-group">
-        <label for="tweet"><h4>What's Happening ?</h4></label>
-        <textarea  id="tweet" style="height:100px" type="text" name="tweet"  class="form-control" placeholder="Enter the tweet"></textarea>
+        <label for="tweet"><h4>What you want to tweet today?</h4></label>
+        <textarea  id="tweet" style="height:100px" type="text" name="tweet"  class="form-control" placeholder="tweet tweet"></textarea>
     </div>
     <br/>
-    <button type="submit" class="btn btn-info" >Proceed</button>
+    <button type="submit" class="btn btn-info" >Done</button>
 
 </div>
 
